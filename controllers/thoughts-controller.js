@@ -1,9 +1,9 @@
-const { Thoughts } = require("../models");
+const { Thought } = require("../models");
 
-const ThoughtsController = {
+const ThoughtController = {
   // the functions will go in here as methods
 };
 
 
 
-module.exports = ThoughtsController;
+module.exports = ThoughtController;
