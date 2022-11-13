@@ -1,11 +1,11 @@
 const router = require("express").Router();
 
 const {
-    createThoughts,
+    addThought,
     getAllThoughts,
     getThoughtById,
-    updateThoughtById,
-    deleteThoughtById,
+    updateThought,
+    removeThought,
     addReaction,
     deleteReaction,
 
@@ -21,7 +21,7 @@ router
     
     .get(getAllThoughts)
     
-    .post(createThoughts);
+    .post(addThought);
 
 // Set up GET one, PUT, and DELETE at /api/thoughts/:id
 router
@@ -30,9 +30,9 @@ router
     
     .get(getThoughtById)
 
-    .put(updateThoughtById)
+    .put(updateThought)
 
-    .delete(deleteThoughtById);
+    .delete(removeThought);
 
 
 // Set up GET one, PUT, and DELETE at /api/reaction
