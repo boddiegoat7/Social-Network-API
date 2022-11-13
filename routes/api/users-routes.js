@@ -7,11 +7,10 @@ const {
     deleteUser,
     addFriend,
     deleteFriend
+    
 } = require('../../controllers/users-controller');
 
 //Set up GET all and Post at /api/social-network
-
-
 router
     .route('/')
     
